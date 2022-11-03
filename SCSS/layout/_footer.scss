@@ -1,0 +1,17 @@
+/* Estilos para el Pie de página todas las páginas*/
+footer{
+    background-color: rgb(101, 163, 255);
+    text-align: center;
+    .navBarFooter{
+        margin: 10px;
+        padding: 10px;
+        li {
+            list-style: none;
+            display: inline;
+            font-size: 12px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

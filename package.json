@@ -1,0 +1,17 @@
+{
+  "name": "pre3villalpando",
+  "version": "1.0.0",
+  "description": "Aplicación LifeBook plataforma de impresión y servicios complementarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss SCSS/style.scss CSS/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Gerardo Villalpando",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
