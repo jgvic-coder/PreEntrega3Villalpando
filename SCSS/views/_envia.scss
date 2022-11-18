@@ -1,0 +1,153 @@
+@include orientacionEnvia( 2fr 2fr, 3fr 1fr);
+@media (max-width : 576px){
+        @include orientacionEnvia(1fr, 1fr 1fr 1fr);
+}
+
+@media (max-width : 576px){
+.navBar{
+    display: none
+}
+.logoEnvia{
+    display: none;
+}
+.txtBuscar{
+    display: none;
+}
+.btnBuscar{
+    display: none;
+}
+}
+
+.enviaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0074d9;
+    height: 5rem;
+}
+
+.enviaHeaderIzquierda{
+    display: flex;
+    justify-content: center;
+}
+
+.headerIzquierdaNav{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding-left: 2rem;
+    justify-content: center;
+}
+
+.logoEnvia{
+    margin-top: .75rem;
+    margin-left: 2rem;
+}
+.menuEnvia{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.menuEnvia a{
+    text-decoration: none;
+    color: black;
+}
+
+.enviaHeaderDerecha{
+    display: flex;
+    justify-content: first baseline;
+    .txtBuscar{
+        width: 200px;
+        height: 2rem;
+        border: 0;
+        margin: .5rem;
+        padding: .5rem;
+        border-radius: 7%;
+    }
+    .btnBuscar{
+        width: 100px;
+        height: 2rem;
+        border: 0;
+        margin: .5rem;
+        padding: .5rem;
+        border-radius: 7%;
+    }
+}
+
+.envioMain{
+        padding: 0;
+        margin: 0;
+}
+
+.envioSelDireccion {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;  
+}
+
+.envSelItem{
+    display: flex;
+    border:2px;
+    box-shadow: var(--box-shadow);
+    border-radius: .75rem;
+    padding: 3px;
+}
+
+.envSelItemIcon{
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.envSelItemTxt p {
+    margin: 0;
+}
+
+.envSelItemTxt h3 {
+    margin: 2px;
+}
+
+.envSelItem:hover {
+    background-color: var(--clr-main);
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-expand);
+}
+.envioBotones{
+    background-color: #0074d9;
+    height: 1.5rem;
+    width: 6.5rem;
+    border: 0;
+    border-radius: 10%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.envioListaTrabajo{
+  padding: 10px;
+}
+
+.envioSelProdform{
+    display: flex;
+    flex-direction: column;
+}
+
+.botones{
+    height: 60px;
+    width: 100px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.envioEmpresa{
+    display: flex;
+    justify-content: center;
+}
+
+.envioSelProd{
+    margin: 30px;
+}
+
+.enviaMapa{
+    margin-left: 40px;
+}

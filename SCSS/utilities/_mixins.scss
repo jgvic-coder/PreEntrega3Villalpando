@@ -21,4 +21,16 @@
     }
 }
 
+@mixin orientacionEnvia ($posicionCol,$posicionRow){
+    .envioMain{
+        display: grid;
+        width: 100%;
+        grid-template-columns: $posicionCol;
+        grid-template-rows: $posicionRow;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enviamos tus obras impresas a domicilios seleccionados">
+    <meta name="author" content="Gerardo Villalpando">
+    <title>LifeBook - Envia</title>
+    <link rel="shortcut icon" href="../assets/logo/logo_chico.png" type="image/x-icon">
+    <!-- Iconos de Bosstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Mis estilos CSS-->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <header class="enviaHeader">
+    <div class="enviaHeaderIzquierda">
+      <div class="headerIzauierdaLogo">
+        <img class="logoEnvia" src="../assets/logo/logo_chico.png" alt="Logo del panel de Personalización">
+      </div>
+      <div class="headerIzquierdaNav">
+        <nav class="navBar">
+          <ul class="menuEnvia">
+            <li class="menuElemeto">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="menuElemeto">
+              <a href="../pages/formularioCreaHist.html">Crea Historias</a>
+            </li>
+            <li class="menuElemeto">
+              <a href="../pages/formularioImprime.html">Imprime</a>
+            </li>
+            <li class="menuElemeto">  
+              <a href="#">Envia</a>
+            </li>
+            <li class="menuElemeto">  
+              <a href="../pages/formularioContacto.html">Contacto</a>
+            </li>
+            <li class="menuElemeto">
+              <a href="#">Configura</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="enviaHeaderDerecha">
+      <input class="txtBuscar" type="text">
+      <button class="btnBuscar">Buscar</button>
+    </div>
+  </header>
+  <main>
+    <div class="titPrincipal">
+      <h2>Imprime tus historias digitales y envia a cualquier parte del mundo</h2>
+    </div>
+    <div class="envioMain">
+      <section class="envioSelProd">
+        <form class="envioSelProdform">
+          <TABLE>
+            <TR><TH ALIGN=right>Cantidad </TH>
+              <TD>
+                <label for="cantidad">
+                  <input type="text", id="cantidad", name="cantidad" autocomplete="cantidad" required>
+                </label>
+              </TD> 
+            <TR><TH ALIGN=right>Precio Unitario</TH>
+              <TD>
+                <label for="precio">
+                  <input type="text", id="precio", name="precio" autocomplete="precio" required>
+                </label>
+              </TD>
+            <TR><TH ALIGN=right>Total</TH>
+                <TD>
+                  <label for="total">
+                    <input type="text", id="total", name="total" autocomplete="total" required>
+                  </label>
+                </TD>
+            <TR><TH ALIGN=right>Tipo</TH>
+                  <TD>
+                    <input type="radio" id="libroTD" name="Libro Tapa Dura" />
+                    <label for="Sel1">Libro Tapa Dura</label>
+              
+                    <input type="radio" id="Libro TB" name="Libro Tapa Blanda" />
+                    <label for="sel2">Libro Tapa Blanda</label>
+              
+                    <input type="radio" id="Revista" name="Revista" />
+                    <label for="sel3">Revista</label>
+                  </TD>    
+          </TABLE>
+          <div>
+              <h2>Pago</h2>
+          </div>
+          <div class="envioEmpresa">
+            <button class="botones">
+              <img src="../assets/logo/visa.jpg" 
+              width=60px
+              height=30px
+              alt="Proveedor de envio UPS">
+            </button>
+            <button class="botones">
+              <img src="../assets/logo/MasterCard.png" 
+              width=60px
+              height=30px
+              alt="Proveedor de envio DHL">
+            </button>
+          </div>
+          <TABLE>
+            <TR><TH ALIGN=right>Número de tarjeta </TH>
+              <TD>
+                <label for="numero">
+                  <input type="text", id="numero", name="numero" autocomplete="numero" required>
+                </label>
+              </TD> 
+            <TR><TH ALIGN=right>Nombre en la tarjeta </TH>
+              <TD>
+                <label for="nombre">
+                  <input type="text", id="nombre", name="nombre" autocomplete="nombre" required>
+                </label>
+              </TD> 
+            <TR><TH ALIGN=right>Mes de Vencimiento </TH>
+              <TD>
+                <select name="mes" required>
+                  <option value="Ene">01</option>
+                  <option value="Feb">02</option>
+                  <option value="Mar">03</option>
+                  <option value="Abr">04</option>
+                  <option value="May">05</option>
+                  <option value="Jun">06</option>
+                  <option value="Jul">07</option>
+                  <option value="Ago">08</option>
+                  <option value="Sep">09</option>
+                  <option value="Oct">10</option>
+                  <option value="Nov">11</option>
+                  <option value="Dic">12</option>
+                </select>
+              </TD>
+              <TR><TH ALIGN=right>Año de Vencimiento</TH>
+              <TD>
+                <select name="ano" required>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                  <option value="2031">2031</option>
+                  <option value="2032">2032</option>
+                </select>
+              </TD>
+            <TR><TH ALIGN=right>Correo Electronico </TH>
+              <td>
+                <input type="email", id="correo", name="correo" autocomplete="email" required>
+              </td>
+              <TR><TH></TH>
+                <TR><TH ALIGN=right><input type="submit"></TH>
+                  <td>
+                    <button type="submit">Agregar tarjeta</button>
+                    <button type="submit">Cotizar</button>
+                  </td>
+          </TABLE>
+        </form>
+      </section>
+      <section class="envioSelDireccion">
+        <div class="envSelItem">
+          <div class="envSelItemIcon">
+            <i class="bi bi-truck"></i>
+          </div>
+          <div class="envSelItemTxt">
+            <h3>Alberto Dominguez L.</h3>
+            <label for="C1">Cantidad</label>
+            <input type="text" name="Cantidad" id="cantidad">
+            <p>Calle 5 no.235</p>
+            <p>Col. el Olvido, CP:78989</p>
+            <p>Brasil</p>
+            <input type="checkbox" name="S1">
+            <label for="S1">Selecciona para enviar</label>
+          </div>
+          <div class="enviaMapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340922.457132167!2d-63.95583046507581!3d-38.51090139078939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2smx!4v1668700981358!5m2!1ses!2smx" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="envSelItem">
+          <div class="envSelItemIcon">
+            <i class="bi bi-truck"></i>
+          </div>
+          <div class="envSelItemTxt">
+            <h3>Roberto Sanchez G.</h3>
+            <label for="C2">Cantidad</label>
+            <input type="text" name="Cantidad" id="cantidad">
+            <p>Calle 555 no.1235</p>
+            <p>Col. Independiente, CP:76859</p>
+            <p>Argentina</p>
+            <input type="checkbox" name="S1">
+            <label for="S1">Selecciona para enviar</label>
+          </div>
+          <div class="enviaMapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340922.457132167!2d-63.95583046507581!3d-38.51090139078939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2smx!4v1668700981358!5m2!1ses!2smx" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="envSelItem">
+          <div class="envSelItemIcon">
+            <i class="bi bi-truck"></i>
+          </div>
+          <div class="envSelItemTxt">
+            <h3>Alberto Dominguez L.</h3>
+            <label for="C1">Cantidad</label>
+            <input type="text" name="Cantidad" id="cantidad">
+            <p>Calle 5 no.235</p>
+            <p>Col. El Nogal, CP:75455</p>
+            <p>México</p>
+            <input type="checkbox" name="S1">
+            <label for="S1">Selecciona para enviar</label>
+          </div>
+          <div class="enviaMapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340922.457132167!2d-63.95583046507581!3d-38.51090139078939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2smx!4v1668700981358!5m2!1ses!2smx" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="envSelItem">
+          <div class="envSelItemIcon">
+            <i class="bi bi-plus"></i>
+          </div>
+          <div class="envSelItemTxt">
+            <h3>Agregar Domicilio</h3>
+          </div>  
+        </div>
+      </section>
+      <section class="envioSelCondiciones">
+        <form class="envioSelDir">
+          <div class="envioListaBotones">
+            <button class="envioBotones" type="submit" value="Submit">Mi Primer Libro</button>
+            <button class="envioBotones" type="submit" value="Submit">Viajes</button>
+            <button class="envioBotones" type="submit" value="Submit">HightLights</button>
+            <button class="envioBotones" type="submit" value="Submit">Recetas</button>
+            <button class="envioBotones" type="submit" value="Submit">Celebraciones</button>
+            <button class="envioBotones" type="submit" value="Submit">Cronologias</button>
+          </div>
+          <div class="envioListaTrabajo">
+            <select name="Trabajo" required>
+              <option value="" disabled selected hidden>Selecciona un Trabajo de esta lista</option>
+              <option value="Trabajo 1">Trabajo 1</option>
+              <option value="Trabajo 2">Trabajo 2</option>
+              <option value="Trabajo 3">Trabajo 3</option>
+            </select>
+          </div>
+        </form>
+      </section>
+      <div class="envioEmpresa">
+        <button class="botones">
+          <img src="../assets/logo/UPS-logo.png" 
+          width=60px
+          height=30px
+          alt="Proveedor de envio UPS">
+        </button>
+        <button class="botones">
+          <img src="../assets/logo/DHL-Logo.png" 
+          width=60px
+          height=30px
+          alt="Proveedor de envio DHL">
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <ul class="navBarFooter">
+      <li><a href="https://www.facebook.com"><img src="../assets/pic-facebook.png" alt="Logo de Facebook"></a></li>
+      <li><a href="https://www.instagram.com"><img src="../assets/pic-instagram.png" alt="Logo de Instagram"></a></li>
+      <li><a href="https://www.whatsapp.com"><img src="../assets/pic-whatsapp.png" alt="Logo de Whatsapp"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
